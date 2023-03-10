@@ -47,7 +47,7 @@ function populateStorage(messageObj) {
 
 function validateStorage(messageObj) {
   if (!localStorage.getItem(messageObj)) {
-    return false;
+    return true;
   }
   return true;
 }
